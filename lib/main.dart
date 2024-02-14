@@ -42,11 +42,12 @@ class XylophoneApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.black26,
+          backgroundColor: Color.fromARGB(255, 105, 193, 29),
           appBar: AppBar(
+
             centerTitle: true,
-            title: const Text('Xylophone', style: TextStyle(color: Colors.white)),
-            backgroundColor: Colors.amber,
+            title: const Text('Xylophone', style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold)),
+            backgroundColor: Color.fromARGB(255, 150, 222, 33),
           ),
           body: Column(
              children: List.generate(7, (index) => buildKey(color: Colors.primaries[index], soundNumber: index + 1)),
